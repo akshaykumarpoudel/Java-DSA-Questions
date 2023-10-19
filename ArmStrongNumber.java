@@ -12,10 +12,11 @@ public class ArmStrongNumber {
         else{
             System.out.println(a+" is not Armstrong number: ");
         }
+        s.close();
     }
     public static boolean ArmStrong(long n)
     {
-        long z=n,x=n;
+        long x=n;
         long a;
         long sum=0;
         long length=GetDigitLength(n);
@@ -34,7 +35,7 @@ public class ArmStrongNumber {
         if(b==0)return 1;
         
         long result=1;
-        for(int i=0;i<b;i++)
+        for(int i=1;i<=b;i++)
         {
             result*=b;
         }
